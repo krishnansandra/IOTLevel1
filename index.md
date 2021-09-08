@@ -1,7 +1,6 @@
 # IOTLevel1
+{: .IOTLevel1-green}
 {: .text-center}
-[Text to display][identifier] will display a link.
-[identifier]:http://example1.com
 -------
 <!-- blank line -->
 <br>
@@ -47,5 +46,6 @@ My warning paragraph.
   color: rgb(138,109,59) !important;
 }
 </style>
-
+[identifier] will display a link.
+[identifier]:http://example1.com
 

@@ -180,7 +180,21 @@ for(x=0; x<255; x++)
 {: .Code-Blue}
 ```ino
 
-
+int potpin=0;
+int ledpin=11;
+int val=0;
+void setup()
+{
+pinMode(ledpin,OUTPUT);
+Serial.begin(9600);
+}
+void loop()
+{
+val=analogRead(potpin);
+Serial.println(val);
+analogWrite(ledpin,val/4);
+delay(10);
+}
 ```
 # Experiment-8 **Flame Sensor**
 ![iot8](ab.png)
@@ -238,6 +252,8 @@ void loop() {
   delay(1000);
 }
 ```
+# Result
+![image](https://user-images.githubusercontent.com/81381146/132707516-96307acc-f4d8-4bbf-bb79-262a666e9af3.png)
 # Experiment-10 **IR Remote Control Using TSOP**
 ![IOT EXP 10](https://user-images.githubusercontent.com/81381146/132623943-948b1a47-a5b1-4ca0-b198-c4a523af5a9c.png)
 
@@ -300,18 +316,146 @@ void loop()
 # Code
 {: .Code-Blue}
 ```ino
+int a=7;
+int b=6;
+int c=5;
+int d=10;
+int e=11;
+int f=8;
+int g=9;
+int dp=4;
+void digital_0(void) 
+{
+unsigned char j;
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(e,HIGH);
+digitalWrite(f,HIGH);
+digitalWrite(g,LOW);
+digitalWrite(dp,LOW);
+}
+void digital_1(void) 
+{
+unsigned char j;
+digitalWrite(c,HIGH);
+digitalWrite(b,HIGH);
+for(j=7;j<=11;j++)
+digitalWrite(j,LOW);
+digitalWrite(dp,LOW);
+}
+void digital_2(void) 
+{
+unsigned char j;
+digitalWrite(b,HIGH);
+digitalWrite(a,HIGH);
+for(j=9;j<=11;j++)
+digitalWrite(j,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(c,LOW);
+digitalWrite(f,LOW);
+}
+void digital_3(void) 
+{digitalWrite(g,HIGH);
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(f,LOW);
+digitalWrite(e,LOW);
+}
+void digital_4(void) 
+{digitalWrite(c,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(a,LOW);
+digitalWrite(e,LOW);
+digitalWrite(d,LOW);
+}
+void digital_5(void) 
+{
+unsigned char j;
+digitalWrite(a,HIGH);
+digitalWrite(b, LOW);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(e, LOW);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+}
+void digital_6(void) 
+{
+unsigned char j;
+for(j=7;j<=11;j++)
+digitalWrite(j,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(b,LOW);
+}
+void digital_7(void) 
+{
+unsigned char j;
+for(j=5;j<=7;j++)
+digitalWrite(j,HIGH);
+digitalWrite(dp,LOW);
+for(j=8;j<=11;j++)
+digitalWrite(j,LOW);
+}
+void digital_8(void) 
+{
+unsigned char j;
+for(j=5;j<=11;j++)
+digitalWrite(j,HIGH);
+digitalWrite(dp,LOW);
+}
+void digital_9(void) 
+{
+unsigned char j;
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(e, LOW);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+}
 void setup()
 {
-  pinMode(LED_BUILTIN, OUTPUT);
+int i;// set variable
+for(i=4;i<=11;i++)
+pinMode(i,OUTPUT);
 }
-
 void loop()
 {
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000); // Wait for 1000 millisecond(s)
-}
+while(1)
+{
+digital_0();
+delay(1000);
+digital_1();
+delay(1000);
+digital_2();
+delay(1000); 
+digital_3();
+delay(1000);
+digital_4();
+delay(1000); 
+digital_5();
+delay(1000); 
+digital_6();
+delay(1000);
+digital_7();
+delay(1000); 
+digital_8();
+delay(1000); 
+digital_9();
+delay(1000); 
+}}
 ```
 # IOT Challenge Assignments
 

@@ -272,7 +272,7 @@ void loop() {
 }
 ```
 # Experiment-11 **Potentiometer Analog Value Reading**
-![](ab.png)
+![iot exp 11](https://user-images.githubusercontent.com/81381146/132667449-2bec5c89-ffd8-42c9-b7e1-02e113bc9c7a.png)
 # Code
 {: .Code-Blue}
 ```ino
@@ -295,7 +295,7 @@ void loop()
 }
 ```
 # Experiment-12 **7 Segment Display**
-![iot2](ab.png)
+![iot exp 12](https://user-images.githubusercontent.com/81381146/132667454-46b59005-f78c-4841-a4d9-8c9ac1f45351.png)
 # Code
 {: .Code-Blue}
 ```ino

@@ -197,7 +197,9 @@ delay(10);
 }
 ```
 # Experiment-8 **Flame Sensor**
-![iot8](ab.png)
+![Screen Shot 2021-09-09 at 9 34 09 PM](https://user-images.githubusercontent.com/81381146/132722023-704b5ffe-6001-4732-9f64-c92b4eab469e.png)
+
+
 # Code
 {: .Code-Blue}
 ```ino

@@ -460,7 +460,8 @@ delay(1000);
 # IOT Challenge Assignments
 
 ## Assignment-1 **Automatic Night Lamp Using LDR and LED**
-![](.png)
+![Assignment 1](https://user-images.githubusercontent.com/81381146/132718584-5454a3e5-f9bb-4d72-9d10-fdc93a27681b.png)
+
 
 # Code
 {: .Code-Blue}
@@ -488,7 +489,7 @@ void loop()
 }
 ```
 ## Assignment-2 **Digital Dice Using 6 LEDS and 1 Push Button**
-![](.png)
+![assignment no 2](https://user-images.githubusercontent.com/81381146/132718725-afce167b-0fcd-411d-a396-690c5a41db50.png)
 
 # Code
 {: .Code-Blue}

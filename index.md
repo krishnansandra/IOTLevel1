@@ -122,7 +122,7 @@ void loop()
 
 ```
 # Experiment-5 **Buzzer**
-[iot 5](https://user-images.githubusercontent.com/81381146/132483592-b453215b-f550-40ad-99eb-b54d3ee2130d.png)
+![iot 5](https://user-images.githubusercontent.com/81381146/132483592-b453215b-f550-40ad-99eb-b54d3ee2130d.png)
 # Code
 {: .Code-Blue}
 ```ino
@@ -215,7 +215,8 @@ void loop()
 
 ```
 # Experiment-9 **LM35 Temperature Sensor**
-![iot 9](https://user-images.githubusercontent.com/81381146/132482398-d2e34a61-618d-4167-b605-3765650f5aa3.png)
+![IOT EXP 9](https://user-images.githubusercontent.com/81381146/132623940-bf775bd2-0694-4753-be7d-392c51fd63d3.png)
+
 # Code
 {: .Code-Blue}
 ```ino
@@ -238,7 +239,8 @@ void loop() {
 }
 ```
 # Experiment-10 **IR Remote Control Using TSOP**
-![iot10](ab.png)
+![IOT EXP 10](https://user-images.githubusercontent.com/81381146/132623943-948b1a47-a5b1-4ca0-b198-c4a523af5a9c.png)
+
 # Code
 {: .Code-Blue}
 ```ino
@@ -270,7 +272,7 @@ void loop() {
 }
 ```
 # Experiment-11 **Potentiometer Analog Value Reading**
-![iot11](ab.png)
+![](ab.png)
 # Code
 {: .Code-Blue}
 ```ino
